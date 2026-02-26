@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        p{
+            font-style:italic ;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: cadetblue;">Simple Calculator</h1>
+    <p>In this website, I'll be making a simple calculator and explaining operators of Javascript! They are: addition (+), subtraction(-), multiplication (*), division (/) and finally, modulus (%). Modulus shows us the remainder given by dividing 2 numbers.</p>
+    <p>Now let's practice them all:</p>
+
+    <p id="exp1"></p>
+    <p id="exp2"></p>
+    <p id="exp3"></p>
+    <p id="exp4"></p>
+    <p id="exp5"></p>
+
+    <script>
+        var a = 7;
+        var b = 9;
+        var c = a + b;
+        var d = a - b;
+        var e = a * b;
+        var f = a / b;
+        var g = a % b;
+
+        document.getElementById("exp1").innerHTML="The sum of 7 and 9 is " + c;
+        document.getElementById("exp2").innerHTML = "The difference of 7 and 9 is " + d;
+        document.getElementById("exp3").innerHTML = "The product of 7 and 9 is " + e;
+        document.getElementById("exp4").innerHTML = "The quotient of 7 and 9 is " + f;
+        document.getElementById("exp5").innerHTML = "The remainder of 7 and 9 is " + g;
+    </script>
+</body>
+</html>
