@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class in JS</title>
+</head>
+<body>
+    <h2>JavaScript Class Inheritance</h2>
+    
+    <p id="details"></p>
+    <p id="greetings"></p>
+    <script>
+        class Student {
+            constructor(name) {
+                this.name = name;
+            }
+
+            present() {
+                return "My name is " + this.name;
+            }
+
+            static hello() {
+                return "Hello from Student class!";
+            }
+        }
+
+        class Grade extends Student {
+            constructor(name, grade) {
+                super(name);
+                this.studentGrade = grade;
+            }
+
+            show() {
+                return this.present() + ", Grade: " + this.studentGrade;
+            }
+        }
+
+        let myStudent = new Grade("Tina", "6");
+
+        document.getElementById("details").innerHTML = myStudent.show();
+        document.getElementById("greetings").innerHTML = Student.hello();
+    </script>
+</body>
+</html>
